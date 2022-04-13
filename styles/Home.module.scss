@@ -1,0 +1,17 @@
+.home {
+    padding-top: 2rem;
+
+    .containTitle {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid red;
+        .title {
+            color: #030303;
+            letter-spacing: 2px;  
+        }
+        .profil {
+
+        }
+
+    }
+}
