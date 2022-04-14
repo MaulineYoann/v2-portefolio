@@ -1,17 +1,41 @@
 .home {
-    padding-top: 2rem;
-
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     .containTitle {
-        display: flex;
-        flex-direction: row;
-        border: 1px solid red;
+        padding: 30px;
+
         .title {
-            color: #030303;
+            color: #fff;
             letter-spacing: 2px;  
         }
-        .profil {
-
+        .name {
+            color: #0077b6;
+            
         }
-
+        p {
+            color: #e5e5e5;
+            font-size: 16px;
+        }
+        .useful {
+            display: flex;
+            align-items: center;
+            .link {
+                font-size: 20px;
+                margin-left: 15px;
+            }
+        }
+        .buttonEmpty {
+            color: red;
+        }
+        
+        
+    }
+    .imageContain {
+        .profil {
+            height: 30px;
+        }
+       
     }
 }
