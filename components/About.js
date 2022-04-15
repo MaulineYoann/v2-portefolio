@@ -15,14 +15,18 @@ const About = () => {
         <section className={styles.sectionContain}>
             <aside className={styles.presentation}>
                 <h2>Faisons connaissance</h2>
-                <p>Passioné d'informatique et de programmation c'est tout naturellement que je me reconverti dans ce domaine. <br/>
-            Aujourd'hui développeur Front-end je développe des sites, applications web et des solutions pour les entreprises.<br/>
-            Toujour en quête de savoir et d'apprentissage je continue à développer mes compétences par la veille et le développement de projets perso. <br/>
-             Ouvert aux opportunités professionnels, je serais ravis de pouvoir apporter mes compétences. N'hésiter pas à me contacter.</p>
-            <Button name='contacter'/>
+                <p><span>Passioné d'informatique</span> et de programmation c'est tout naturellement que je me reconverti dans ce domaine. 
+                <br/> 
+            Aujourd'hui <span>développeur Front-end</span> je développe des sites, applications web et des solutions pour les entreprises.
+            <br/>
+            Curieux de nature je continue de développer mes compétences par la veille technologique, l'apprentissage de nouvelles méthodes, langages, et le <span>développement de projets perso.</span> <br/>
+            <span>Ouvert aux opportunités professionnels</span> , je serais ravis de pouvoir apporter mes compétences. N'hésiter pas à me contacter.</p>
+            <div className={styles.button}>
+                <Button name=' Me Contacter'/>
+            </div>
             </aside>
             <aside className={styles.skills}>
-                <h2>Mes Compétences</h2>
+                <h2>Compétences</h2>
                 <div className={styles.skillsList}>
                     {
                         arraySkill.map((skill, index) => (

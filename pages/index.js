@@ -3,6 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Index.module.scss'
 import Home from '../components/Home'
 import About from '../components/About'
+import Projects from '../components/Projects'
+
 
 export default function index() {
   return (
@@ -14,7 +16,8 @@ export default function index() {
       </Head>
       <main className={styles.container}>
         <Home />
-      <About />
+        <About />
+        <Projects />
       </main>
     
     </div>

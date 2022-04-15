@@ -13,9 +13,9 @@ export default function Navbar() {
         <nav>
             <div>logo</div>
             <ul className="box-contain">
-              <li className="items">Acceuil</li>
-              <li className="items">Projets</li>
+              <Link href='/' className="items">Acceuil</Link>
               <li className="items">A propos</li>
+              <Link href='/project' className="items">Projets</Link>
               <li className="items">Contact</li>
             </ul>
             <div 

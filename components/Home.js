@@ -46,7 +46,9 @@ function Home() {
             <FaGithub className={styles.link} />
           </a>
         </p>
-        <Button name="Me contacter" className={styles.buttonFull} />
+        <Button name="Me Contacter" className={styles.buttonFull} >
+          <a></a>
+        </Button>
         <Button name="Mon CV" className={styles.buttonEmpty} />
       </div>
       <div className={styles.imageContain}>
