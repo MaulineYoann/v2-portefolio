@@ -25,14 +25,16 @@
     }
     p {
         color: #fff;
-        font-size: 17px;
+        font-size: 1.4rem;
         text-align: center;
         position: relative; 
         padding-bottom: 70px;
+        font-weight: 500;
     }
     .containProject{
         display: flex;
         flex-flow: row wrap;
-        gap: 40px;
+        justify-content: center;
+        gap: 100px;
     }
 }
