@@ -1,26 +1,15 @@
 import React, {useState, useRef} from 'react';
 import styles from '../styles/Contact.module.scss';
 import { send } from 'emailjs-com';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-
-
 
 
 const Contact = () => {
-    // const [toSend, setToSend] = useState({
-    //     name: '',
-    //     email: '',
-    //     subject: '',
-    //     message: ''
-    // });
 
     const [name, setName] = useState('');
     const [mail, setMail] = useState('')
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
-    // const handleChange = e => {
-    //     setToSend({...toSend, [e.target.name]: e.target.value});
-    // }
+
     const handleName = (e) => setName(e.target.value)
     const handleMail = (e) => setMail(e.target.value)
     const handleSubject = (e) => setSubject(e.target.value)
@@ -64,9 +53,6 @@ const Contact = () => {
 
         <input type="submit" value="Envoyer" className={styles.submit} />
       </form>
-      </aside>
-      <aside className="position">
-      
       </aside>
     </section>
   );

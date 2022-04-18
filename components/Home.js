@@ -2,9 +2,10 @@ import React from 'react';
 import styles from '../styles/Home.module.scss';
 import Image from 'next/image';
 import profil from '../public/assets/profil.png';
-import { Typewriter } from 'react-simple-typewriter';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import Button from './Button';
+import Typewriter from 'typewriter-effect';
+
 
 function Home() {
   return (
@@ -14,19 +15,14 @@ function Home() {
           Bienvenue, <br /> je suis{' '}
           <span className={styles.name}>Yoann Mauline</span>
           <br />
-          Développeur Front end JavaScript
-          {/* <Typewriter
-            cursor
-            cursorStyle="|"
-            typeSpeed={50}
-            deleteSpeed={50}
-            delaySpeed={1000}
-            words={[
-              'Developpeur front end',
-              'Développeur JavaScript',
-              'Intégrateur Web',
-            ]}
-          /> */}
+          {/* Développeur Front end JavaScript */}
+          {<Typewriter 
+            options={{
+              strings: ['Développeur Front-end', 'Développeur JavaScript', 'Consultant Informatique'],
+              autoStart: true,
+              loop: true
+            }}
+          /> }
         </h1>
         <p>passioné de technologies.</p>
         <p className={styles.useful}>
@@ -54,7 +50,6 @@ function Home() {
       <div className={styles.imageContain}>
         <Image src={profil} width={400} height={400} alt="profil" />
       </div>
-      <div className={styles.glass}></div>
     </hero>
   );
 }
