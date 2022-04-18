@@ -8,7 +8,9 @@
     height: 70vh;
     position: relative;
     .containTitle {
-        padding: 30px;
+        padding: 30px;  
+        position: relative;
+      
         .title {
             color: #fff;
             letter-spacing: 2px;
@@ -51,8 +53,8 @@
         width: 70px;
         background-color: #fff;
         transform: rotate(45deg);
-        
     }
+    
 }
 
 @media screen and (max-width: 850px) {

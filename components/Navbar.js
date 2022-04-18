@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import styles from '../styles/Navbar.module.scss'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import Link from 'next/link';
+import logo from '../public/assets/logo2.png'
+import Image from 'next/image'
 
 export default function Navbar() {
 
@@ -11,7 +13,12 @@ export default function Navbar() {
   return (
     <header className={styles.header}>
         <nav>
-            <div>logo</div>
+            <Image 
+            src={logo}
+            alt='logo'
+            height={100}
+            width={100}
+            />
             <ul className="box-contain">
               <Link href='/' className="items">Acceuil</Link>
               <li className="items">A propos</li>

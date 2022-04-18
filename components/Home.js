@@ -54,6 +54,7 @@ function Home() {
       <div className={styles.imageContain}>
         <Image src={profil} width={400} height={400} alt="profil" />
       </div>
+      <div className={styles.glass}></div>
     </hero>
   );
 }

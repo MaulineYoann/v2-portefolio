@@ -11,6 +11,10 @@
         position: relative;
         display: block;
         margin-bottom: 50px;
+        &::first-letter {
+            color: #0077b6;
+            font-size: 4rem;
+        }
         &::before {
             content: '';
             position: absolute;
