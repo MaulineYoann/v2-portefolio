@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable react/no-unescaped-entities */
 import React, {useState, useRef} from 'react';
 import styles from '../styles/Contact.module.scss';
 import { send } from 'emailjs-com';
@@ -36,10 +39,7 @@ const Contact = () => {
       <aside className={styles.form}>
       <h1>Contact</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
-        architecto sapiente voluptatem id tempora quaerat deserunt corporis
-        accusantium consequatur omnis velit, repudiandae nemo repellat rerum
-        accusamus culpa voluptatum repellendus officiis?
+      Un projet ? une mission ? N'hésitez pas à me contacter sur <span><a href="https://www.linkedin.com/in/yoann-mauline/" target='_blank'>Linkedin</a></span> où à travers le formulaire ci-dessous je vous répondrai dans les plus brefs délais.
       </p>
       <form ref={form} onSubmit={sendEmail} className={styles.contactForm}>
         <input placeholder="Nom" type="text" name="name" required value={name}

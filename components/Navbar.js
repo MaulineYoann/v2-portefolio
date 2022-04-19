@@ -9,6 +9,7 @@ export default function Navbar() {
 
   const [showNav, setShowNav] = useState(false);
   const handleShowNav = () => setShowNav(!showNav)
+  console.log(showNav);
 
   return (
     <header className={styles.header}>
@@ -21,26 +22,33 @@ export default function Navbar() {
             />
             <ul className="box-contain">
               <Link href='/' className="items">Acceuil</Link>
-              <li className="items">A propos</li>
-              <Link href='/project' className="items">Projets</Link>
-              <li className="items">Contact</li>
+              <Link className="items" href='#about'>A propos</Link>
+              <Link href='#project' className="items">Projets</Link>
+              <Link className="items" href="#contact">Contact</Link>
             </ul>
             <div 
             onClick={handleShowNav}
             className={styles.burger}>
-              <GiHamburgerMenu className='menu-burger'/>
+              <GiHamburgerMenu className={styles.burgerIcon}/>
             </div>
         </nav>
         {
            showNav && (
-              <div className={styles.sideNav}>
+              <section className={styles.sideNav}>
                     <ul>
-                      <li onClick={handleShowNav}>Acceuil</li>
-                      <li onClick={handleShowNav}>Projets</li>
-                      <li onClick={handleShowNav}>A Propos</li>
-                      <li onClick={handleShowNav}>Contact</li>
+                      <Link href='/' >
+                        <a onClick={handleShowNav}> Acceuil</a></Link>
+                      <Link href='#about'>
+                        <a onClick={handleShowNav}>A Propos</a>
+                        </Link>
+                      <Link href='#project' >
+                        <a onClick={handleShowNav}>Project</a>
+                        </Link>
+                      <Link href='#contact' >
+                        <a onClick={handleShowNav}>Contact</a>
+                        </Link>
                     </ul>
-                  </div>
+                  </section>
                 )
               }
     </header>

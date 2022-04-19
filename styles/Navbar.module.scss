@@ -17,7 +17,7 @@
         ul {
             display: flex;
             gap: 40px;
-            li {
+            a {
                 list-style-type: none;
                 cursor: pointer;
                 font-weight: bold;
@@ -31,6 +31,7 @@
        .burger {
            font-size: 40px;
            cursor: pointer;
+           display: block;
        }
     }
     .sideNav {
@@ -46,7 +47,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            li {
+            a {
                 animation: animNav 1s ease-in-out normal backwards;
                 padding: 20px;
                 &:nth-child(2) {

@@ -8,11 +8,13 @@
     background-color: #0077b6;
     cursor: pointer;
     margin-right: 30px;
+    margin-bottom: 30px;
     font-size: 20px;
     color: #fff;
     transition: 300ms;
     &:hover {
       background-color: #023e8a;
+      border: 1px solid #fff;
     }
     &:focus {
         outline: 0;
