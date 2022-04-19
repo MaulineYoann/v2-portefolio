@@ -31,7 +31,10 @@
        .burger {
            font-size: 40px;
            cursor: pointer;
-           display: block;
+           display: none;
+            .burgerIcon {
+                display: none;
+            }
        }
     }
     .sideNav {
@@ -87,11 +90,14 @@
         }
     }
 }
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
     .header {
         nav {
             .burger {
-                display: none;
+                display: block;
+                .burgerIcon {
+                    display: block;
+                }
             }
         }
     }

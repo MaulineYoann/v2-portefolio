@@ -29,6 +29,7 @@ export default function Navbar() {
             <div 
             onClick={handleShowNav}
             className={styles.burger}>
+              <div className={styles.cssBurger}></div>
               <GiHamburgerMenu className={styles.burgerIcon}/>
             </div>
         </nav>
