@@ -1,4 +1,5 @@
 {
+  "homepage": "https://MaulineYoann.github.io/v2-portefolio",
   "name": "v2",
   "version": "0.1.0",
   "private": true,
@@ -6,7 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "emailjs": "^3.8.1",
@@ -23,6 +25,7 @@
   },
   "devDependencies": {
     "eslint": "8.12.0",
-    "eslint-config-next": "12.1.4"
+    "eslint-config-next": "12.1.4",
+    "gh-pages": "^3.2.3"
   }
 }
