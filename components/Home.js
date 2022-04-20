@@ -6,8 +6,6 @@ import profil from '../public/assets/profil.png';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import Button from './Button';
 import Typewriter from 'typewriter-effect';
-import Link from 'next/link'
-// import CV from '../public/assets/monCV.pdf'
 
 function Home() {
   return (
@@ -49,8 +47,8 @@ function Home() {
             <FaGithub className={styles.link} />
           </a>
         </p>
-        
-        {/* <a href='../public/assets/cv.pdf' download>
+
+        {/* <a href={CV} download={CV}>
           mon cv
           <Button name="Mon CV" className={styles.buttonEmpty} />
         </a> */}

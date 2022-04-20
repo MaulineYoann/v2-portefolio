@@ -1,12 +1,12 @@
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from './Navbar';
+import Footer from './Footer';
 
-export default function Container({children}) {
+export default function Container({ children }) {
   return (
     <>
-    <Navbar />
-    {children}
-    <Footer />
+      <Navbar />
+      {children}
+      <Footer />
     </>
-  )
+  );
 }
