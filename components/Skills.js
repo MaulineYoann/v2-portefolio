@@ -12,7 +12,7 @@ const Skills = ({ skill }) => {
       font-size: 17px;
       font-weight: 600;
     }
-  `;
+  `
   return (
     <Contain>
       <Image src={skill.logo} heigth={40} width={40} alt="logo de compétence" />

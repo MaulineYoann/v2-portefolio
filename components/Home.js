@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.scss';
 import Image from 'next/image';
 import profil from '../public/assets/profil.png';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import Button from './Button';
 import Typewriter from 'typewriter-effect';
 
 function Home() {
@@ -47,11 +46,6 @@ function Home() {
             <FaGithub className={styles.link} />
           </a>
         </p>
-
-        {/* <a href={CV} download={CV}>
-          mon cv
-          <Button name="Mon CV" className={styles.buttonEmpty} />
-        </a> */}
       </div>
       <div className={styles.imageContain}>
         <Image src={profil} width={400} height={400} alt="profil" />

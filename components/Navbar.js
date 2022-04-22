@@ -8,8 +8,6 @@ import Image from 'next/image';
 export default function Navbar() {
   const [showNav, setShowNav] = useState(false);
   const handleShowNav = () => setShowNav(!showNav);
-  console.log(showNav);
-
   return (
     <header className={styles.header}>
       <nav>

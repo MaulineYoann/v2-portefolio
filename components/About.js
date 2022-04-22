@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import styles from '../styles/About.module.scss';
-import Button from './Button';
 import { arraySkill } from '../data/arraySkill';
 import Skills from './Skills';
 
