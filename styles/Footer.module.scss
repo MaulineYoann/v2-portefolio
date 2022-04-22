@@ -1,5 +1,5 @@
 .footer {
-  height: 100px;
+  // height: 100px;
   background-color: #0a0a0b;
   border: 1px solid #212529;
   color: #fff;
@@ -10,5 +10,15 @@
   padding: 0 10%;
   .version {
     padding-left: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer {
+    flex-direction: column;
+    .version {
+      padding: 20px;
+      display: block;
+      text-align: center;
+    }
   }
 }
